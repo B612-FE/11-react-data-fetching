@@ -10,7 +10,7 @@ import Upcoming from "./Elements/MovieList/Upcoming";
 
 function MainPage() {
   const Container = styled.div`
-    max-height: 780px;
+    max-height: 727px;
     overflow-y: scroll;
   `;
 
