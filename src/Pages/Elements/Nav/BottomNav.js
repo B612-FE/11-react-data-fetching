@@ -12,7 +12,6 @@ const NavContainer = styled.div`
 
 const Nav = styled.div`
   position: fixed;
-  top: 837px;
   display: flex;
   flex-direction: row;
   align-items: center;

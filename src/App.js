@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import MainPage from "./Pages/MainPage";
+import BottomNav from ".Pages//Elements/Nav/BottomNav";
 
 const Wrapper = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ function App() {
             <Route path="/main" element={<MainPage />} />
           </Routes>
         </Router>
+        <BottomNav />
       </Container>
     </Wrapper>
   );

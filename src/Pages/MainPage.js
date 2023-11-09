@@ -7,7 +7,6 @@ import Previews from "./Elements/MovieList/Previews";
 import PopularOn from "./Elements/MovieList/PopularOn";
 import TopRated from "./Elements/MovieList/TopRated";
 import Upcoming from "./Elements/MovieList/Upcoming";
-import BottomNav from "./Elements/Nav/BottomNav";
 
 function MainPage() {
   const Container = styled.div`
@@ -42,7 +41,6 @@ function MainPage() {
         <TopRated />
         <Upcoming />
       </MovieListWrapper>
-      <BottomNav />
     </Container>
   );
 }
