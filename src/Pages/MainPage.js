@@ -25,7 +25,7 @@ function MainPage() {
     margin-top: 40px;
     margin-left: 10px;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   `;
 
   return (
