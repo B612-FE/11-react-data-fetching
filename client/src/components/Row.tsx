@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Movie from "@components/Movie";
 
 interface RowProps {
   title: string;
@@ -16,15 +17,6 @@ const Row = ({ title, fetchURL, rowID }: RowProps) => {
     });
   }, [fetchURL]);
 
-  const slideLeft = () => {
-    var slider: any = document.getElementById("slider" + rowID);
-    slider.scrollLeft = slider.scrollLeft - 500;
-  };
-  const slideRight = () => {
-    var slider: any = document.getElementById("slider" + rowID);
-    slider.scrollLeft = slider.scrollLeft + 500;
-  };
-
   return (
     <>
       <h2 className="text-white font-bold md:text-xl p-4">{title}</h2>
@@ -32,7 +24,11 @@ const Row = ({ title, fetchURL, rowID }: RowProps) => {
         <div
           id={"slider" + rowID}
           className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
-        ></div>
+        >
+          {movies.map((item: any, id) => (
+            <Movie item={item} />
+          ))}
+        </div>
       </div>
     </>
   );
