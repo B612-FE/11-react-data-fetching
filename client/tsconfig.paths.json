@@ -3,8 +3,8 @@
     "baseUrl": "src",
     "paths": {
       "@apis/*": ["apis/*"],
-      "@atoms/*": ["components/atoms/*"],
-      "@pages/*": ["components/pages/*"],
+      "@atoms/*": ["atoms/*"],
+      "@pages/*": ["pages/*"],
       "@hooks/*": ["hooks/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"],
