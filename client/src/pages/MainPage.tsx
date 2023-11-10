@@ -1,6 +1,6 @@
 import Main from "@components/Main";
 import Row from "@components/Row";
-import requests from "../Requests";
+import requests from "@apis/Requests";
 
 const MainPage = () => {
   return (

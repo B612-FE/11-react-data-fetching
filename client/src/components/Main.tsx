@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import requests from "../Requests";
+import requests from "@apis/Requests";
 
 const Main = () => {
   const [movies, setMovies] = useState([]);

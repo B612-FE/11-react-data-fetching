@@ -4,11 +4,10 @@
     "paths": {
       "@apis/*": ["apis/*"],
       "@atoms/*": ["atoms/*"],
-      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
       "@hooks/*": ["hooks/*"],
-      "@styles/*": ["styles/*"],
-      "@utils/*": ["utils/*"],
-      "@components/*": ["components/*"]
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"]
     }
   }
 }

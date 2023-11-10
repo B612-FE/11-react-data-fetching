@@ -3,14 +3,12 @@ import MainPage from "@pages/MainPage";
 import DetailPage from "@pages/DetailPage";
 import SearchPage from "@pages/SearchPage";
 import Navbar from "@components/Navbar";
-import Footer from "@components/Footer";
 
 const Layout = () => {
   return (
     <>
       <Navbar />
       <Outlet />
-      {/* <Footer /> */}
     </>
   );
 };
