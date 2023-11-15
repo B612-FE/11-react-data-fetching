@@ -12,7 +12,7 @@ const Main = () => {
       setMovies(response.data.results);
     });
   }, []);
-
+  
   const truncateString = (str: string, num: number) => {
     if (str?.length > num) {
       return str.slice(0, num) + "...";
