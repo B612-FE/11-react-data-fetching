@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import LandingPage from "./pages/LandingPage";
-import MainPage from "./pages/MainPage";
-import SearchPage from "./pages/SearchPage";
-import DetailPage from "./pages/DetailPage";
+import LandingPage from "./Pages/LandingPage";
+import MainPage from "./Pages/MainPage";
+import SearchPage from "./Pages/SearchPage";
+import DetailPage from "./Pages/DetailPage";
 
 function App() {
   return (
