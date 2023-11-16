@@ -1,14 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
-import LandingPage from "./Pages/LandingPage";
-import MainPage from "./Pages/MainPage";
-import BottomNav from "./Pages/Elements/Nav/BottomNav";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages//LandingPage";
+import MainPage from "./pages/MainPage";
+import SearchPage from "./pages/SearchPage";
+import DetailPage from "./pages/DetailPage";
+
+function App() {
+  return (
+    <Router>
+      <Wrapper>
+        <Container>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/main" element={<MainPage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/detail/:id" element={<DetailPage />} />
+          </Routes>
+        </Container>
+      </Wrapper>
+    </Router>
+  );
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,31 +32,9 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  height: 780px;
+  height: 100vh;
   width: 375px;
   background-color: #000000;
 `;
-
-function App() {
-  return (
-    <Router>
-      <Wrapper>
-        <Container>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/main" element={<MainPage />} />
-          </Routes>
-          <BottomNavWrapper />
-        </Container>
-      </Wrapper>
-    </Router>
-  );
-}
-
-function BottomNavWrapper() {
-  const location = useLocation();
-
-  return location.pathname === "/main" ? <BottomNav /> : null;
-}
 
 export default App;

@@ -29,7 +29,7 @@ function LandingPage() {
   }, [navigate]);
 
   const Container = styled.div`
-    height: 780px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

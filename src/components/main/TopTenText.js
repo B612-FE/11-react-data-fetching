@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+const TopTenText = ({ rank }) => {
+  return (
+    <MainTextWrapper>
+      <Rectangle>
+        <TopText>TOP</TopText>
+        <NumberText>10</NumberText>
+      </Rectangle>
+      <RankText>#{rank} in Korea Today</RankText>
+    </MainTextWrapper>
+  );
+};
+
 const MainTextWrapper = styled.div`
   position: absolute;
   display: flex;
@@ -39,16 +51,4 @@ const RankText = styled.div`
   line-height: 20px;
 `;
 
-const MainText = ({ rank }) => {
-  return (
-    <MainTextWrapper>
-      <Rectangle>
-        <TopText>TOP</TopText>
-        <NumberText>10</NumberText>
-      </Rectangle>
-      <RankText>#{rank} in Korea Today</RankText>
-    </MainTextWrapper>
-  );
-};
-
-export default MainText;
+export default TopTenText;

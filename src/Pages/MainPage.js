@@ -1,39 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import Navigator from "./Elements/Nav/Navigator";
-import MainImage from "./Elements/MainImage";
-import MainMenu from "./Elements/MainMenu";
-import Previews from "./Elements/MovieList/Previews";
-import PopularOn from "./Elements/MovieList/PopularOn";
-import TopRated from "./Elements/MovieList/TopRated";
-import Upcoming from "./Elements/MovieList/Upcoming";
+
+import TopNav from "../components/main/TopNav";
+import MainMovie from "../components/main/MainMovie";
+import {
+  Previews,
+  PopularOn,
+  TopRated,
+  Upcoming,
+} from "../components/main/MovieList";
+import BottomNav from "../components/BottomNav";
 
 function MainPage() {
-  const Container = styled.div`
-    max-height: 727px;
-    overflow-y: scroll;
-  `;
-
-  const Wrapper = styled.div`
-    position: relative;
-    display: flex;
-    justify-content: center;
-  `;
-
-  const MovieListWrapper = styled.div`
-    display: flex;
-    margin-top: 40px;
-    margin-left: 10px;
-    flex-direction: column;
-    margin-bottom: 10px;
-  `;
-
   return (
     <Container>
       <Wrapper>
-        <Navigator />
-        <MainImage />
-        <MainMenu />
+        <TopNav />
+        <MainMovie />
       </Wrapper>
       <MovieListWrapper>
         <Previews />
@@ -41,8 +24,27 @@ function MainPage() {
         <TopRated />
         <Upcoming />
       </MovieListWrapper>
+      <BottomNav />
     </Container>
   );
 }
+
+const Container = styled.div`
+  max-height: 100vh;
+  overflow-y: scroll;
+`;
+
+const Wrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+`;
+
+const MovieListWrapper = styled.div`
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  margin-bottom: 53px;
+`;
 
 export default MainPage;

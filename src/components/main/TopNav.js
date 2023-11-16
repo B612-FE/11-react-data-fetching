@@ -1,6 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import netflixLogo from "../../../img/netflixLogo.svg";
+
+import netflixLogo from "../../assets/netflixLogo.svg";
+
+function TopNav() {
+  return (
+    <Nav>
+      <Logo src={netflixLogo} />
+      <MenuItem>TV Shows</MenuItem>
+      <MenuItem>Movies</MenuItem>
+      <MenuItem>My List</MenuItem>
+    </Nav>
+  );
+}
 
 const Nav = styled.nav`
   position: absolute;
@@ -24,10 +36,7 @@ const Logo = styled.img`
 const MenuItem = styled.a`
   margin-left: 23px;
   color: #ffffff;
-  font-feature-settings: "clig" off, "liga" off;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.8px;
   cursor: pointer;
@@ -36,15 +45,4 @@ const MenuItem = styled.a`
   }
 `;
 
-function Navigator() {
-  return (
-    <Nav>
-      <Logo src={netflixLogo} />
-      <MenuItem>TV Shows</MenuItem>
-      <MenuItem>Movies</MenuItem>
-      <MenuItem>My List</MenuItem>
-    </Nav>
-  );
-}
-
-export default Navigator;
+export default TopNav;
