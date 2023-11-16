@@ -28,13 +28,6 @@ function LandingPage() {
     };
   }, [navigate]);
 
-  const Container = styled.div`
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `;
-
   return (
     <Container>
       <dotlottie-player
@@ -47,5 +40,12 @@ function LandingPage() {
     </Container>
   );
 }
+
+const Container = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default LandingPage;
