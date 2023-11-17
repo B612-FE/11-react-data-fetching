@@ -1,9 +1,12 @@
 import Router from "@pages/Router";
+import { AuthContextProvider } from "@atoms/AuthContext";
 
 function App() {
   return (
     <>
-      <Router />
+      <AuthContextProvider>
+        <Router />
+      </AuthContextProvider>
     </>
   );
 }

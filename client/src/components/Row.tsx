@@ -14,7 +14,10 @@ const Row = ({ title, fetchURL, rowID }: RowProps) => {
 
   useEffect(() => {
     axios.get(fetchURL).then((response) => {
-      setMovies(response.data.results);
+      const filteredData = response.data.results.filter(
+        (item: any) => item?.backdrop_path !== null
+      );
+      setMovies(filteredData);
     });
   }, [fetchURL]);
 
@@ -42,7 +45,7 @@ const Row = ({ title, fetchURL, rowID }: RowProps) => {
           className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
         >
           {movies.map((item: any, id) => (
-            <Movie item={item} />
+            <Movie item={item} id={id} />
           ))}
         </div>
         <MdChevronRight

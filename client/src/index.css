@@ -8,3 +8,13 @@ body {
   background-color: #000000;
   font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
