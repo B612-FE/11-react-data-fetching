@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-import { UserAuth } from "@atoms/AuthContext";
-import { db } from "../firebase";
+import { UserAuth } from "@contexts/AuthContext";
+import { db } from "@apis/firebase";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
 const Movie = ({ item }: any) => {
   const [like, setLike] = useState(false);
   const [saved, setSaved] = useState(false);
   const { user } = UserAuth();
 
-  const movieID = doc(db, 'users', `${user?.email}`);
+  const movieID = doc(db, "users", `${user?.email}`);
 
   const saveShow = async () => {
     if (user?.email) {
@@ -22,7 +22,7 @@ const Movie = ({ item }: any) => {
         }),
       });
     } else {
-      alert('Please log in to save a movie');
+      alert("Please log in to save a movie");
     }
   };
 

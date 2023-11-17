@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import { UserAuth } from "@atoms/AuthContext";
-import { db } from "../firebase";
+import { UserAuth } from "@contexts/AuthContext";
+import { db } from "@apis/firebase";
 import { updateDoc, doc, onSnapshot } from "firebase/firestore";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -25,7 +25,7 @@ const SavedShows = () => {
   }, [user?.email]);
 
   const movieRef = doc(db, "users", `${user?.email}`);
-  
+
   const deleteShow = async (passedID: any) => {
     try {
       const result = movies.filter((item: any) => item.id !== passedID);
