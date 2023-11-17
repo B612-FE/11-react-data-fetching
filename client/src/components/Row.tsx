@@ -45,7 +45,7 @@ const Row = ({ title, fetchURL, rowID }: RowProps) => {
           className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
         >
           {movies.map((item: any, id) => (
-            <Movie item={item} id={id} />
+            <Movie item={item} key={id} />
           ))}
         </div>
         <MdChevronRight

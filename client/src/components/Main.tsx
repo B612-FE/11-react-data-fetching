@@ -9,7 +9,10 @@ const Main = () => {
 
   useEffect(() => {
     axios.get(requests.requestPopular).then((response) => {
-      setMovies(response.data.results);
+      const filteredData = response.data.results.filter(
+        (item: any) => item?.backdrop_path !== (null || undefined)
+      );
+      setMovies(filteredData);
     });
   }, []);
 
