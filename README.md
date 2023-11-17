@@ -1,36 +1,70 @@
-# 11주차: react - data fetching
+# Getting Started with Create React App
 
-안녕하세요 프론트엔드 리드 **강나연**, **홍서현**입니다.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-이번 주차에는 피그마로 주어진 디자인을 그대로 구현해 보고, open API를 활용하는 방법을 익히기 위해 넷플릭스 클론 코딩을 해 봅니다.
+## Available Scripts
 
-서버와의 통신을 통해 데이터를 다루기 전, open API를 사용해 데이터를 불러오고, 가공을 통해 화면에 보여주는 경험은 웹 개발에 대해 큰 맥락에서 이해를 도울 것 같습니다!
+In the project directory, you can run:
 
-이번 과제를 통해 많은 시도를 해보시고 많이 배우셨으면 좋겠습니다!
+### `npm start`
 
-사용 기술 스택은 원하시는 대로 사용하셔도 됩니다.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-typescript, react-query, next.js 등 어떤 기술 스택이든 좋습니다!
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-## 과제
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-주어진 [피그마](https://www.figma.com/file/UqdXDovIczt1Gl0IjknHQf/Netflix?type=design&node-id=0-1&mode=design) 화면과 [the movie db](https://www.themoviedb.org/)에서 open api를 활용해 랜딩 페이지와 메인 페이지를 구현합니다. (검색 페이지 제외)
+### `npm run build`
 
-https://next-netflix-16th-pre-folio-front.vercel.app/
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 마감 기한
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-~ 11월 9일 23시 55분
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 참고 자료
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- api
-    
-    https://enjoyinjoanne.tistory.com/56
-    
-- axios
-    
-    [https://velog.io/@zofqofhtltm8015/Axios-사용법-서버-통신-해보기](https://velog.io/@zofqofhtltm8015/Axios-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%84%9C%EB%B2%84-%ED%86%B5%EC%8B%A0-%ED%95%B4%EB%B3%B4%EA%B8%B0)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
